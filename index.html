@@ -17,36 +17,58 @@
 
         <nav class="page_nav">
             <ul class="page_nav_list">
-                <li><a href="#">Rates & Fees</a></li>
-                <li><a href="#">How to apply</a></li>
-                <li><a href="#">Questions?</a></li>
+                <li class="nav_item"><a href="#">Rates & Fees</a></li>
+                <li class="nav_item"><a href="#">How to apply</a></li>
+                <li class="nav_item"><a href="#">Questions?</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<main class="main_content">
-    <div class="container">
-            <div class="into__info">
+<main class="main container">
+    <section class="main_intro">
+            <div class="intro_info">
                 <h2 class="description">Personal Loan</h2>
                 <h1 class="title">Put your plans <br> into actions.</h1>
-
-                <ul class="benefits">
-                    <li class="icon_item">Online application</li>
-                    <li class="icon__item">Up to $50.000</li>
-                    <li class="icon__item">The money is yours in 48h</li>
-                </ul>
+<!--                <ul class="benefits">-->
+<!--                    <li class="icon__item">Online application</li>-->
+<!--                    <li class="icon__item">Up to $50.000</li>-->
+<!--                    <li class="icon__item">The money is yours in 48h</li>-->
+<!--                </ul>-->
+                <div class="info__icons">
+                    <div class="icon__item">
+                        <span class="item__text">Online application</span>
+                    </div>
+                    <div class="icon__item">
+                        <span class="item__text">Up to $50.000</span>
+                    </div>
+                    <div class="icon__item">
+                        <span class="item__text">The money is yours in 48h</span>
+                    </div>
+                </div>
             </div>
 
             <div class="intro__form">
-                <div class="container">
+                <h3 class="form_title">Let's change your life?</h3>
                     <form>
+                        <div class="form_field">
+                            <label class="form_label" for="name">Full name</label>
+                            <input type="text" class="form_input name" id="name" placeholder="John Doe">
+                        </div>
 
+                        <div class="form_field">
+                            <label class="form_label" for="email">E-mail</label>
+                            <input type="email" class="form_input email" id="email" placeholder="john.doe@apple.com>
+                        </div>
+
+                        <div class="form_field">
+                            <label class="form_label" for="question">How much do you need?</label>
+                            <input type="text" class="form_input question" id="question" placeholder="1.000">
+                        </div>
+                        <button type="submit" class="small_btn">Check your rates</button>
                     </form>
                 </div>
-            </div>
-    </div>
-
-</main>
+            </section>
+        </main>
 </body>
 </html>
